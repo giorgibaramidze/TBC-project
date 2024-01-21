@@ -10,6 +10,16 @@
 }
 body {
   height: 200vh;
+  background: grey;
+}
+
+.header-bg {
+  height: 84px;
+  width: 100%;
+}
+
+.width {
+  width: 100%;
 }
 
 .container {
@@ -37,28 +47,35 @@ header {
       a {
         padding: 0px 20px;
         line-height: 10px;
-        transition: all .3s
+        transition: all 0.3s;
       }
 
-      a:hover{
+      a:hover {
         color: rgb(63, 121, 228);
       }
     }
   }
 }
 
-.checkbtn{
-    font-size: 40px;
-    color: white;
-    display: none;
-    cursor: pointer;
+.checkbtn {
+  font-size: 40px;
+  color: white;
+  display: none;
+  cursor: pointer;
 }
 
-#check{
-    display: none;
+#check {
+  display: none;
 }
 
-@media only screen and (max-width: 700px)  {
+.title {
+  background: url(/images/cover.webp) no-repeat center center/cover;
+  height: 37vh;
+  width: 100%;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 700px) {
   header nav ul {
     position: fixed;
     flex-direction: column;
@@ -67,18 +84,34 @@ header {
     height: 100vh;
     width: 100%;
     background: #2c3e50;
-    transition: all .5s;
+    transition: all 0.5s;
 
-    li{
+    li {
       display: block;
       margin-top: 20px;
     }
   }
-  .checkbtn{
+  .checkbtn {
     display: block;
   }
 
   #check:checked ~ ul {
     left: 0;
+  }
+}
+
+.list {
+  margin-top: 10px;
+  display: grid;
+  grid-gap: 20px 35px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  width: 100%;
+  background-color: blue;
+
+  article {
+    border-radius: 5px solid black;
+    img {
+      width: 100%;
+    }
   }
 }
