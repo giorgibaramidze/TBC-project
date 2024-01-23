@@ -119,6 +119,26 @@ header {
   }
 }
 
+.accordion-section {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.accordion-header {
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+  color: #2c3e50;
+}
+
+
 
 @media only screen and (max-width: 700px) {
   header nav ul {
