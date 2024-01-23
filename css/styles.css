@@ -75,6 +75,51 @@ header {
   font-size: 30px;
 }
 
+
+
+.courses {
+  background: black;
+  padding: 35px 0;
+}
+
+
+
+.list {
+  margin-top: 50px;
+  display: grid;
+  grid-gap: 20px 37px;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  grid-auto-rows: minmax(290px, 400px);
+
+  .box {
+    border: 1px solid grey;
+    border-radius: 8px;
+
+    img {
+      width: 100%;
+      border-radius: 8px 8px 0 0;
+      object-fit: cover;
+    }
+    .text {
+      padding: 30px 20px;
+      p {
+        margin-top: 30px;
+      }
+      .details {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+
+        a {
+          color: rgb(22, 138, 233);
+        }
+      }
+    }
+  }
+}
+
+
 @media only screen and (max-width: 700px) {
   header nav ul {
     position: fixed;
@@ -97,21 +142,5 @@ header {
 
   #check:checked ~ ul {
     left: 0;
-  }
-}
-
-.list {
-  margin-top: 10px;
-  display: grid;
-  grid-gap: 20px 35px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  width: 100%;
-  background-color: blue;
-
-  article {
-    border-radius: 5px solid black;
-    img {
-      width: 100%;
-    }
   }
 }
